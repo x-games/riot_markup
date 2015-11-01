@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="admin_header">
+        <div class="admin_header_logo">
+            <a href="#">RIOT</a>
+        </div>
+        <div class="admin_header_menu">
+            <ul class="clearfix">
+                <li class="menu_dashboard active">Dashboard</li>
+                <li class="menu_users">Users</li>
+                <li class="menu_jobs">Jobs</li>
+                <li class="menu_explore">Explore</li>
+                <li class="menu_skills">Skills</li>
+                <li class="menu_blog">Blog</li>
+            </ul>
+        </div>
+        <div class="admin_header_logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="admin_content_wrapper">
+        <p class="admin_content_heading">Users</p>
+        <div class="admin_content admin_content_users clearfix">
+            <div class="users_search clearfix">
+                <div class="users_search_select">
+                    <select>
+                        <option value="0">Email</option>
+                        <option value="1">Username</option>
+                        <option value="2">Join date</option>
+                    </select>
+                    <span class="caret"></span>
+                </div>
+                <div class="users_search_input">
+                    <input type="text" placeholder="Search..."/>
+                </div>
+                <div class="users_search_button">
+                    <button class="btn btn-default" type="submit">Go!</button>
+                </div>
+            </div>
+            <div class="users_table">
+                <p class="users_table_count">Users: 325,724</p>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Full Name<span class="caret"></span></th>
+                        <th>Email<span class="caret"></span></th>
+                        <th>Join Date<span class="caret"></span></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><a href="#"><img class="users_avatar" src="assets/img/users_avatar.png" alt=""/>Jason M</a></td>
+                        <td>andyasd@gmail.com</td>
+                        <td>8/10/2015 16:13</td>
+                        <td><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><a href="#"><img class="users_avatar" src="assets/img/users_avatar.png" alt=""/>Jason M</a></td>
+                        <td>andyasd@gmail.com</td>
+                        <td>8/10/2015 16:13</td>
+                        <td><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><a href="#"><img class="users_avatar" src="assets/img/users_avatar.png" alt=""/>Jason M</a></td>
+                        <td>andyasd@gmail.com</td>
+                        <td>8/10/2015 16:13</td>
+                        <td><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="users_navigation">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

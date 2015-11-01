@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="admin_header">
+        <div class="admin_header_logo">
+            <a href="#">RIOT</a>
+        </div>
+        <div class="admin_header_menu">
+            <ul class="clearfix">
+                <li class="menu_dashboard active">Dashboard</li>
+                <li class="menu_users">Users</li>
+                <li class="menu_jobs">Jobs</li>
+                <li class="menu_explore">Explore</li>
+                <li class="menu_skills">Skills</li>
+                <li class="menu_blog">Blog</li>
+            </ul>
+        </div>
+        <div class="admin_header_logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="admin_content_wrapper">
+        <p class="admin_content_heading">Users / Thomas Refvik</p>
+        <div class="admin_content admin_content_users clearfix">
+            <div class="user_details_info clearfix">
+                <div class="user_details_info_contacts">
+                    <img src="assets/img/ProfilePic@2x.png" alt="pic"/>
+                    <p class="user_details_info_name">Thomas Refvik</p>
+                    <p class="user_details_info_profession">Filmmaker</p>
+                    <a class="user_details_info_email" href="mailto:Thomas@gmail.com">Thomas@gmail.com</a>
+                </div>
+                <div class="user_details_info_biography">
+                    <p class="user_details_info_biography_heading">Biography</p>
+                    <p>Pellentesque sagittis leo tortor, auctor malesuada nibh faucibus eget. Nullam leo felis, elementum sed pellentesque ac, accumsan scelerisque risus. Aenean varius purus in nibh facilisis rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vehicula imperdiet nunc non accumsan. Morbi semper, felis nec finibus elementum, ex lectus dignissim ligula, tempor malesuada dolor erat volutpat ipsum. Aenean malesuada magna est, non faucibus tellus viverra vel. Donec ut facilisis tortor, id interdum elit. Mauris risus metus, tristique non nunc sed, maximus volutpat odio. Phasellus quam nibh, dictum nec urna et, faucibus dignissim justo. Nunc tincidunt neque sed commodo dignissim. Aliquam dapibus libero ac est hendrerit, vel molestie neque bibendum. Donec aliquet sem ultricies ligula imperdiet egestas. Nam sed sem ut turpis interdum pellentesque ac non urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+            </div>
+            <div class="user_details_professional_info clearfix">
+                <div class="user_details_professional_info_skills">
+                    <p class="user_details_professional_info_heading">Skills</p>
+                    <div class="users_search clearfix">
+                        <div class="users_search_input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="users_search_button">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </div>
+                    </div>
+                    <ul class="user_details_professional_info_skills_list clearfix">
+                        <li>VFX</li>
+                        <li>Photoshop</li>
+                        <li>3d Max</li>
+                        <li>After effects</li>
+                        <li>Final cut pro</li>
+                        <li>Title design</li>
+                    </ul>
+                </div>
+                <div class="user_details_professional_info_portfolio">
+                    <p class="user_details_professional_info_heading">Portfolio pieces added by user</p>
+                    <div class="users_search clearfix">
+                        <div class="users_search_input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="users_search_button">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Video Title<span class="caret"></span></th>
+                            <th>Posted<span class="caret"></span></th>
+                            <th>Featured</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Coca-Cola Commercial</td>
+                            <td>8/10/2015 16:13</td>
+                            <td><input type="checkbox"/></td>
+                            <td><button class="view_portfolio_btn btn btn-default">View</button><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Coca-Cola Commercial</td>
+                            <td>8/10/2015 16:13</td>
+                            <td><input type="checkbox"/></td>
+                            <td><button class="view_portfolio_btn btn btn-default">View</button><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Coca-Cola Commercial</td>
+                            <td>8/10/2015 16:13</td>
+                            <td><input type="checkbox"/></td>
+                            <td><button class="view_portfolio_btn btn btn-default">View</button><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="users_navigation">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

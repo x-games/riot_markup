@@ -1,0 +1,10 @@
+*.iml
+*.psd
+*.pdf
+*.zip
+*.sketch
+.idea/
+.frontend/
+.Screens_backend/
+.Admin Assets/
+.DS_Store

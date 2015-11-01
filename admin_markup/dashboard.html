@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="admin_header">
+        <div class="admin_header_logo">
+            <a href="#">RIOT</a>
+        </div>
+        <div class="admin_header_menu">
+            <ul class="clearfix">
+                <li class="menu_dashboard active">Dashboard</li>
+                <li class="menu_users">Users</li>
+                <li class="menu_jobs">Jobs</li>
+                <li class="menu_explore">Explore</li>
+                <li class="menu_skills">Skills</li>
+                <li class="menu_blog">Blog</li>
+            </ul>
+        </div>
+        <div class="admin_header_logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="admin_content_wrapper">
+        <p class="admin_content_heading">Dashboard</p>
+        <div class="admin_content admin_content_dashboard">
+            <div class="admin_content_dashboard_data clearfix">
+                <div class="admin_content_dashboard_jobs">
+                    <p class="admin_content_dashboard_data_count">527</p>
+                    <p class="admin_content_dashboard_data_title">Jobs posted</p>
+                </div>
+                <div class="admin_content_dashboard_users">
+                    <p class="admin_content_dashboard_data_count">20 408</p>
+                    <p class="admin_content_dashboard_data_title">Total users</p>
+                </div>
+                <div class="admin_content_dashboard_showreels">
+                    <p class="admin_content_dashboard_data_count">85 435</p>
+                    <p class="admin_content_dashboard_data_title">Showreels</p>
+                </div>
+            </div>
+            <div class="admin_content_dashboard_charts clearfix">
+                <div class="admin_content_dashboard_charts_left">
+                    <div class="admin_content_dashboard_charts_heading clearfix">
+                        <p>Signups</p>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> 24h
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Week
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> 1 month
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option4" autocomplete="off"> 6 month
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option5" autocomplete="off"> Year
+                            </label>
+                        </div>
+                    </div>
+                    <div class="admin_content_dashboard_charts_wrapper">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div class="admin_content_dashboard_charts_right">
+                    <div class="admin_content_dashboard_charts_heading clearfix">
+                        <p>User activity</p>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="options" id="option6" autocomplete="off" checked> 24h
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option7" autocomplete="off"> Week
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option8" autocomplete="off"> 1 month
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option9" autocomplete="off"> 6 month
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option10" autocomplete="off"> Year
+                            </label>
+                        </div>
+                    </div>
+                    <div class="admin_content_dashboard_charts_wrapper">
+                        <canvas id="canvas_2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
