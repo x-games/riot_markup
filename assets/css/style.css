@@ -244,6 +244,10 @@ h1, h2, h2, p {
     margin-left: 28px;
 }
 
+.header_menu ul li.header_avatar_pic {
+    margin-left: 22px;
+}
+
 .header_menu ul li.active a {
     border-bottom: 1px solid black;
 }
@@ -256,6 +260,10 @@ h1, h2, h2, p {
 }
 
 .header_menu_plus img {
+    width: 32px;
+}
+
+.header_avatar_pic img {
     width: 32px;
 }
 
@@ -1017,4 +1025,125 @@ p.skip_this_step {
 p.skip_this_step a {
     text-decoration: none;
     color: #737373;
+}
+
+.user_profile_header_additional_content {
+
+}
+
+.user_profile_header_avatar {
+    float: left;
+    border-radius: 70px;
+    overflow: hidden;
+}
+
+.user_profile_header_avatar img {
+    width: 140px;
+
+}
+
+.user_profile_header_info {
+    float: left;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+p.user_profile_header_info_name {
+    text-align: left;
+    font: 32px/34px 'HelveticaNeueCyr-Roman';
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+p.user_profile_header_info_profession {
+    color: #313131;
+    text-align: left;
+    font: 18px/20px 'HelveticaNeueCyr-Roman';
+}
+
+.user_profile_header_info_id {
+    color: #313131;
+    font: 12px/14px 'HelveticaNeueCyr-Roman';
+}
+
+.user_profile_data {
+    background-color: rgb(247, 247, 247);
+}
+
+.user_profile_data_wrapper {
+    margin: 0 auto;
+    width: 940px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.user_profile_biography_skills {
+    padding-bottom: 48px;
+}
+
+.user_profile_biography {
+    float: left;
+    width: 540px;
+    margin-right: 90px;
+}
+
+.user_profile_skills {
+    float: left;
+    width: 300px;
+}
+
+.user_profile_heading {
+    font: 46px/48px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    padding-bottom: 33px;
+}
+
+.user_profile_biography_text {
+    font: 16px/25px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.user_profile_skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user_profile_skills ul li {
+    float: left;
+    height: 40px;
+    font: 16px/39px 'HelveticaNeueCyr-Roman';
+    border: 2px solid #000000;
+    border-radius: 3px;
+    padding: 0 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.user_profile_showreels {
+
+}
+
+.user_profile_showreels_list {
+
+}
+
+.user_profile_showreels_list .riot_explore_element {
+    margin-bottom: 60px;
+}
+
+.user_profile_edit_new_photo p {
+    display: none;
+    top: 45px;
+}
+
+.user_profile_edit_new_photo:hover p {
+    display: block;
+}
+
+.user_profile_edit_new_photo:hover img {
+    opacity: 0.3;
 }

@@ -4,7 +4,7 @@
 *.zip
 *.sketch
 .idea/
-.frontend/
-.Screens_backend/
-.Admin Assets/
+frontend/
+Screens_backend/
+Admin Assets/
 .DS_Store
