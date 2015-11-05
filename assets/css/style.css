@@ -1147,3 +1147,83 @@ p.user_profile_header_info_profession {
 .user_profile_edit_new_photo:hover img {
     opacity: 0.3;
 }
+
+.explore_page {
+    background-color: rgb(247, 247, 247);
+}
+
+.explore_page_wrapper {
+    margin: 0 auto;
+    width: 940px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.explore_page_video_items_list .riot_explore_element {
+    margin-bottom: 60px;
+}
+
+.loading_more_videos {
+    font: 18px/20px 'HelveticaNeueCyr-Roman';
+    text-align: center;
+    animation: pulseAnim 1s linear 0s infinite;
+    opacity: 1;
+}
+
+@keyframes pulseAnim {
+    0%   {opacity: 1;}
+
+    50%  {opacity: 0.5;}
+
+    100% {opacity: 1;}
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 940px;
+        margin: 30px auto;
+    }
+}
+
+.explore_page_modal_info {
+    padding: 30px 0 55px 0;
+}
+
+.explore_page_modal_user_info {
+    text-align: center;
+}
+
+.explore_page_modal_user_info img {
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.explore_page_modal_user_info p {
+    font: 12px/14px 'HelveticaNeueCyr-Roman';
+    color: #707070;
+}
+
+.explore_page_modal_text {
+    text-align: center;
+    padding-top: 36px;
+}
+
+.explore_page_modal_text p.explore_page_modal_text_simple {
+    font: 16px/18px 'HelveticaNeueCyr-Roman';
+    color: #737373;
+    width: 470px;
+    margin: 0 auto;
+}
+
+p.explore_page_modal_text_heading {
+    font: 46px/48px 'HelveticaNeueCyr-Roman';
+    color: #707070;
+    padding-bottom: 33px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 3px;
+}
