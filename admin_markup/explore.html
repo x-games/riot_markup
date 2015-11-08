@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="admin_header">
+        <div class="admin_header_logo">
+            <a href="#">RIOT</a>
+        </div>
+        <div class="admin_header_menu">
+            <ul class="clearfix">
+                <li class="menu_dashboard active">Dashboard</li>
+                <li class="menu_users">Users</li>
+                <li class="menu_jobs">Jobs</li>
+                <li class="menu_explore">Explore</li>
+                <li class="menu_skills">Skills</li>
+                <li class="menu_blog">Blog</li>
+            </ul>
+        </div>
+        <div class="admin_header_logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="admin_content_wrapper">
+        <p class="admin_content_heading">Explore</p>
+        <div class="admin_content admin_content_explore clearfix">
+            <div class="users_search clearfix">
+                <div class="users_search_select">
+                    <select>
+                        <option value="0">Video Title</option>
+                        <option value="1">Published By</option>
+                        <option value="2">Posted</option>
+                        <option value="3">Featured</option>
+                    </select>
+                    <span class="caret"></span>
+                </div>
+                <div class="users_search_input">
+                    <input type="text" placeholder="Search..."/>
+                </div>
+                <div class="users_search_button">
+                    <button class="btn btn-default" type="submit">Go!</button>
+                </div>
+            </div>
+            <div class="users_table">
+                <p class="users_table_count">Users: 325,724</p>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#<span class="caret"></span></th>
+                        <th>Video Title<span class="caret"></span></th>
+                        <th>Published By<span class="caret"></span></th>
+                        <th>Posted<span class="caret"></span></th>
+                        <th>Featured</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Coca-Cola</td>
+                        <td>andyasd@gmail.com</td>
+                        <td>8/10/2015 16:13</td>
+                        <td><input type="checkbox"/></td>
+                        <td><button class="view_portfolio_btn btn btn-default" data-toggle="modal" data-target="#myModal">View</button><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2014 Showreel</td>
+                        <td>andyasd@gmail.com</td>
+                        <td>8/10/2015 16:13</td>
+                        <td><input type="checkbox"/></td>
+                        <td><button class="view_portfolio_btn btn btn-default" data-toggle="modal" data-target="#myModal">View</button><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>TV Ad</td>
+                        <td>andyasd@gmail.com</td>
+                        <td>8/10/2015 16:13</td>
+                        <td><input type="checkbox"/></td>
+                        <td><button class="view_portfolio_btn btn btn-default" data-toggle="modal" data-target="#myModal">View</button><button class="delete_user_btn btn btn-default">Delete user</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="users_navigation">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal window with video -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Coca-Cola Commercial</h4>
+                </div>
+                <div class="explore_page_modal_video">
+                    <iframe id="playerid" width="720" height="480" src="https://www.youtube.com/embed/qDqGjgE_v7g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="explore_page_modal_info">
+                    <div class="explore_page_modal_text">
+                        <p class="explore_page_modal_text_simple">The monkey-rope is found in all whalers; but it was only in the Pequod that the monkey and his holder were ever tied together. This improvement upon the original usage was introduced by no less a man than Stubb, in order to afford the imperilled harpooneer the strongest possible guarantee for the faithfulness and vigilance of his monkey-rope holder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Demo of usage
+        var modalWindow = $('#myModal');
+        modalWindow.on('show.bs.modal', function (e) {
+            $('.explore_page_modal_video iframe').attr('src', 'https://www.youtube.com/embed/qDqGjgE_v7g');
+        });
+        modalWindow.on('hide.bs.modal', function (e) {
+            $('.explore_page_modal_video iframe').attr('src', '');
+        });
+    </script>
+</div>
+
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

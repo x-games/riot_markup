@@ -571,3 +571,91 @@ ul.user_details_professional_info_skills_list li {
     border-radius: 7px;
     background: #5cb85c url("../img/new_job_add.png") 42px 50% no-repeat;
 }
+
+.admin_content_explore {
+    position: relative;
+    padding: 45px 55px 25px 55px;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 720px;
+        margin: 30px auto;
+    }
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-header {
+    padding: 30px 25px;
+}
+
+h4.modal-title {
+    font: 24px/26px Arial;
+    color: #898989;
+    max-width: 650px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.explore_page_modal_text {
+    padding: 30px 20px;
+}
+
+.explore_page_modal_text_simple {
+    font: 14px/20px Arial;
+}
+
+.admin_content_skills {
+    padding: 45px 55px 25px 55px;
+}
+
+.skills_details_info {
+
+}
+
+.user_details_skills_approval {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.user_details_skills_all {
+    float: left;
+    width: 48%;
+}
+
+.user_details_skills_approval .users_search .users_search_input input {
+    border: 1px solid #cccccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.user_details_skills_all .users_search .users_search_input input {
+    border: 1px solid #cccccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.user_details_skills_approval thead tr:first-child {
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+
+.user_details_skills_all thead tr:first-child {
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+
+.user_details_skills_approval tr:hover .view_portfolio_btn, .user_details_skills_approval tr:hover .delete_user_btn {
+    opacity: 1;
+}
+
+.user_details_skills_all tr:hover .view_portfolio_btn, .user_details_skills_all tr:hover .delete_user_btn {
+    opacity: 1;
+}
+
+.skills_navigation {
+    float: right;
+}

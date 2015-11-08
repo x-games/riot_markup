@@ -1292,3 +1292,104 @@ p.explore_page_modal_text_heading {
     font: 18px/20px 'HelveticaNeueCyr-Roman';
     padding-top: 36px;
 }
+
+.mind_your_business_categories {
+    background-color: #fff;
+}
+
+.mind_your_business_categories_element {
+    position: relative;
+    float: left;
+    width: 33.3%;
+}
+
+.mind_your_business_categories_element img {
+    width: 100%;
+}
+
+.mind_your_business_categories_element p {
+    position: relative;
+    top: 45%;
+    font: 21px/23px 'HelveticaNeueCyr-Thin';
+    color: #fff;
+    text-align: center;
+}
+
+.mind_your_business_categories_element_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mind_your_business_post_list {
+    background-color: rgb(247, 247, 247);
+}
+
+.mind_your_business_post_list_wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 47px;
+}
+
+.mind_your_business_post_content {
+    padding-top: 60px;
+}
+
+.mind_your_business_post_content img {
+    width: 940px;
+}
+
+.mind_your_business_post_title {
+    font: 46px/48px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.mind_your_business_post_text {
+
+}
+
+.mind_your_business_post_article {
+    float: left;
+    width: 730px;
+}
+
+.mind_your_business_post_article p {
+    color: #313131;
+    font: 16px/24px 'HelveticaNeueCyr-Roman';
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+
+.mind_your_business_post_info {
+    float: right;
+    text-align: right;
+    font: 16px/24px 'HelveticaNeueCyr-Roman';
+    letter-spacing: 1px;
+}
+
+.mind_your_business_post_category {
+    padding-bottom: 20px;
+}
+
+.mind_your_business_related_posts {
+    background-color: rgb(247, 247, 247);
+}
+
+.mind_your_business_related_posts_wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.mind_your_business_related_posts_wrapper .mind_your_business_post_title {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.mind_your_business_related_posts_wrapper .riot_myb_list {
+    padding-top: 30px;
+}
