@@ -19,6 +19,11 @@ $('.cancel_btn').on('click', function() {
 $("#myTags").tagit();
 
 
+$('.available_select select').on('change', function() {
+    var availableSelectIndicator = $('.available_select_indicator');
+    parseInt($(this).val()) ? availableSelectIndicator.addClass('available') : availableSelectIndicator.removeClass('available');
+});
+
 
 
 

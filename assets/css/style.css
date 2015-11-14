@@ -1032,9 +1032,12 @@ p.skip_this_step a {
 }
 
 .user_profile_header_avatar {
+    width: 140px;
+    height: 140px;
     float: left;
     border-radius: 70px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .user_profile_header_avatar img {
@@ -1393,3 +1396,239 @@ p.explore_page_modal_text_heading {
 .mind_your_business_related_posts_wrapper .riot_myb_list {
     padding-top: 30px;
 }
+
+.user_profile_minimum_header_additional_content {
+    position: relative;
+    padding: 70px 0 70px 0;
+    background-color: #ADADAD;
+}
+
+.user_profile_minimum_header_additional_content .user_profile_header_additional_content {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.user_profile_minimum_header_additional_content p.user_profile_header_info_name,
+.user_profile_minimum_header_additional_content .user_profile_header_info_id,
+.user_profile_minimum_header_additional_content p.user_profile_header_info_profession {
+    color: #fff;
+}
+
+.user_rating {
+    margin-top: 10px;
+}
+
+.user_rating .star {
+    width: 16px;
+    height: 15px;
+    float: left;
+    background: url("../img/white_star.png") 0 0 no-repeat;
+    margin-right: 5px;
+}
+
+.user_rating .star.star_transparent {
+    background: url("../img/transparent_star.png") 0 0 no-repeat;
+}
+
+.user_rating_text {
+    font: 12px/14px 'HelveticaNeueCyr-Thin';
+    color: #fff;
+}
+
+.user_profile_minimum_portfolio {
+    background-color: #D8D8D8;
+}
+
+.user_profile_minimum_portfolio_item {
+    position: relative;
+    width: 20%;
+    padding-top: 20%;
+    border: 1px solid #CECECE;
+    float: left;
+}
+
+.user_profile_minimum_portfolio_item button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 52px;
+    padding: 0;
+    border: none;
+    border-radius: 40px;
+    font: 18px/52px 'HelveticaNeueCyr-Thin';
+    color: #fff;
+    cursor: pointer;
+}
+
+.user_profile_minimum_portfolio_item input {
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.user_profile_minimum_biography {
+    background-color: #fff;
+}
+
+.user_profile_minimum_biography_wrapper {
+    width: 790px;
+    margin: 0 auto;
+    padding: 87px 0 62px 0;
+}
+
+.user_profile_minimum_biography_wrapper .user_profile_heading {
+    text-align: center;
+}
+
+.user_profile_minimum_social {
+    background-color: #EFEFEF;
+}
+
+.user_profile_minimum_social_wrapper {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.user_profile_minimum_social_wrapper ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.user_profile_minimum_social_wrapper ul li {
+    float: left;
+    line-height: 130px;
+    height: 130px;
+    width: 100px;
+    background-size: auto 21px;
+}
+
+.user_profile_minimum_social_dribble {
+    background: url("../img/dribbble-ball.png") 50% 50% no-repeat;
+}
+
+.user_profile_minimum_social_vimeo {
+    background: url("../img/vimeo-icon.png") 50% 50% no-repeat;
+}
+
+.user_profile_minimum_social_twitter {
+    background: url("../img/twitter_logo.png") 50% 50% no-repeat;
+}
+
+.user_profile_minimum_social_facebook {
+    background: url("../img/facebook-logo.png") 50% 50% no-repeat;
+}
+
+.user_profile_minimum_social_wrapper ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.user_profile_minimum_controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 280px;
+    width: 280px;
+    z-index: 2;
+}
+
+.user_profile_minimum_controls .bookmarks {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    padding-left: 25px;
+    background: url("../img/label_icon.png") 0 50% no-repeat;
+    font: 14px/16px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    height: 40px;
+}
+
+.user_profile_minimum_controls .bookmarks a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.user_profile_minimum_controls .bookmarks p {
+    padding-top: 14px;
+    color: #313131;
+}
+
+.user_profile_minimum_controls .messages {
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+    padding-left: 50px;
+    background: url("../img/mail_letter.png") 14px 50% no-repeat;
+    font: 14px/16px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    height: 40px;
+}
+
+.user_profile_minimum_controls .messages a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.user_profile_minimum_controls .messages p {
+    padding-top: 14px;
+    color: #313131;
+}
+
+.messages_count {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font: 10px/18px 'HelveticaNeueCyr-Thin';
+    color: #fff;
+    background-color: #313131;
+    width: 18px;
+    height: 18px;
+    border-radius: 11px;
+    text-align: center;
+}
+
+.available_select {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding-right: 19px;
+}
+
+.available_select select {
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    font: 14px/16px 'HelveticaNeueCyr-Roman';
+    color: #fff;
+    padding: 0px 0px 0px 17px;
+    background: url("../img/arrow-list.png") 0 50% no-repeat;
+}
+
+.available_select_indicator {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: red;
+}
+
+.available_select_indicator.available {
+    background-color: #AFE879;
+}
+
