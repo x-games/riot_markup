@@ -391,6 +391,7 @@ h1, h2, h2, p {
     cursor: pointer;
     padding: 22px 30px;
     margin-bottom: 2px;
+    position: relative;
 }
 
 .riot_jobs_element img {
@@ -1632,3 +1633,171 @@ p.explore_page_modal_text_heading {
     background-color: #AFE879;
 }
 
+.riot_jobs_page_content {
+    background-color: rgb(247, 247, 247);
+}
+
+.riot_jobs_page_content_wrapper {
+    margin: 0 auto;
+    width: 940px;
+    padding-bottom: 50px;
+}
+
+.riot_jobs_page_day {
+    padding-top: 70px;
+}
+
+.riot_jobs_page_day .riot_content_header {
+    text-align: left;
+    display: inline-block;
+}
+
+.riot_jobs_page_day .riot_content_header_date {
+    display: inline-block;
+    font: 16px/48px 'HelveticaNeueCyr-Roman';
+    position: relative;
+    top: -8px;
+    margin-left: 10px;
+}
+
+.riot_jobs_page_day .riot_jobs_list {
+    padding-top: 30px;
+}
+
+.riot_jobs_element.unavailable {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.unavailable_button {
+    width: 97px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font: 14px/32px 'HelveticaNeueCyr-Thin';
+    text-align: center;
+}
+
+.loading_more_jobs {
+    padding-top: 50px;
+    font: 18px/20px 'HelveticaNeueCyr-Roman';
+    text-align: center;
+    animation: pulseAnim 1s linear 0s infinite;
+    opacity: 1;
+}
+
+.job_details_header_additional_content {
+    margin: 0 auto;
+    width: 940px;
+    padding: 67px 0 50px 0;
+    position: relative;
+}
+
+.job_details_logo {
+    height: 62px;
+}
+
+.job_details_logo img {
+    height: 62px;
+    float: left;
+}
+
+.job_details_logo p {
+    float: left;
+    color: #313131;
+    font: 32px/34px 'HelveticaNeueCyr-Roman';
+    padding: 15px 0px 0px 20px;
+}
+
+.job_details_info {
+    padding-top: 50px;
+}
+
+.job_details_info p {
+    font: 16px/18px 'HelveticaNeueCyr-Thin';
+    color: #313131;
+}
+
+.job_details_link {
+    padding-top: 8px;
+}
+
+.job_details_link p {
+    opacity: 0.5;
+    font: 16px/18px 'HelveticaNeueCyr-Thin';
+    color: #313131;
+}
+
+.job_details_link p a {
+    color: #313131;
+}
+
+.job_details_about {
+    background-color: rgb(247, 247, 247);
+}
+
+.job_details_about_wrapper {
+    margin: 0 auto;
+    width: 940px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.job_details_about_heading {
+    font: 46px/48px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    padding-bottom: 35px;
+}
+
+.job_details_about_text {
+    font: 16px/20px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    padding-bottom: 21px;
+    letter-spacing: 1px;
+}
+
+.job_details_about_list {
+    font: 16px/20px 'HelveticaNeueCyr-Roman';
+    color: #313131;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.job_details_about_apply {
+    display: block;
+    width: 145px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #000;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    font: 16px/42px 'HelveticaNeueCyr-Thin';
+    margin: 55px auto 0 auto;
+}
+
+.unavailable_button_details {
+    opacity: 0.5;
+    width: 97px;
+    height: 32px;
+    position: absolute;
+    top: 187px;
+    left: 355px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font: 14px/32px 'HelveticaNeueCyr-Thin';
+    text-align: center;
+}
+
+.job_details_about_apply.disabled {
+    opacity: 0.3;
+}
