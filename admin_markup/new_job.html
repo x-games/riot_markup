@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <script src="assets/js/ckeditor/ckeditor.js"></script>
+    <script src="assets/js/ckeditor/sample.js"></script>
+    <link rel="stylesheet" href="assets/css/samples.css"/>
+    <link rel="stylesheet" href="assets/css/neo.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="admin_header">
+        <div class="admin_header_logo">
+            <a href="#">RIOT</a>
+        </div>
+        <div class="admin_header_menu">
+            <ul class="clearfix">
+                <li class="menu_dashboard active">Dashboard</li>
+                <li class="menu_users">Users</li>
+                <li class="menu_jobs">Jobs</li>
+                <li class="menu_explore">Explore</li>
+                <li class="menu_skills">Skills</li>
+                <li class="menu_blog">Blog</li>
+            </ul>
+        </div>
+        <div class="admin_header_logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="admin_content_wrapper">
+        <p class="admin_content_heading">New job</p>
+        <div class="admin_content admin_content_new_job clearfix">
+            <div class="admin_content_new_job_wrapper">
+                <div class="new_job_title">
+                    <p class="new_job_heading">Job Title</p>
+                    <input type="text" placeholder=""/>
+                </div>
+                <div class="new_job_company">
+                    <p class="new_job_heading">Company</p>
+                    <input type="text" placeholder=""/>
+                </div>
+                <div class="new_job_company_logo clearfix">
+                    <p class="new_job_heading">Company Logo</p>
+                    <div class="input-group input-group-lg browse_company_logo">
+                        <span class="input-group-addon">Browse</span>
+                        <input type="text" class="form-control" placeholder="">
+                        <input type="file"/>
+                    </div>
+                    <div class="input-group upload_company_logo">
+                        <button type="button" class="btn btn-default btn-lg upload_company_logo_button">Upload</button>
+                    </div>
+                </div>
+                <script>
+                    //Demo
+                    $('.new_job_company_logo input[type="file"]').on('change', function() {
+                        var val = $(this).val();
+                        $('.browse_company_logo input[type="text"]').val(val);
+                    });
+                </script>
+                <div class="new_job_location">
+                    <p class="new_job_heading">Location</p>
+                    <input type="text" placeholder=""/>
+                </div>
+                <div class="new_job_salary_date clearfix">
+                    <div class="new_job_salary">
+                        <p class="new_job_heading">Salary</p>
+                        <div class="users_search clearfix">
+                            <div class="users_search_input">
+                                <input type="text" placeholder="">
+                            </div>
+                            <div class="users_search_select">
+                                <select>
+                                    <option value="0">USD</option>
+                                    <option value="1">AUD</option>
+                                    <option value="2">EURO</option>
+                                </select>
+                                <span class="caret"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_job_date clearfix">
+                        <div class="new_job_date_from">
+                            <p class="new_job_heading">From</p>
+                            <input class="form-control input-lg" type="text"/>
+                        </div>
+                        <div class="new_job_date_to">
+                            <p class="new_job_heading">To</p>
+                            <input class="form-control input-lg" type="text"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="job_description">
+                    <p class="new_job_heading">Job Description</p>
+                    <div id="editor">
+                        <h1>Hello world!</h1>
+                        <p>I'm an instance of <a href="http://ckeditor.com">CKEditor</a>.</p>
+                    </div>
+                </div>
+                <div class="new_job_post_buttons">
+                    <p>
+                        <button type="button" class="btn btn-default btn-lg">Cancel</button>
+                        <button type="button" class="btn btn-success btn-lg post_job_button">Post Job</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/main.js"></script>
+<script>
+    initSample();
+</script>
+</body>
+</html>

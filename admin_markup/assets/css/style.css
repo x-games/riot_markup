@@ -7,6 +7,7 @@
 
 html, body {
     height:100%;
+    min-height: 100%;
 }
 
 h1, h2, h2, p {
@@ -16,6 +17,7 @@ h1, h2, h2, p {
 .wrapper {
     background-color: #f7f7f7;
     height: 100%;
+    min-height: 100%;
     min-width: 1100px;
 }
 
@@ -216,6 +218,7 @@ h1, h2, h2, p {
 
 .admin_content_wrapper {
     padding: 40px 55px;
+    background-color: #f7f7f7;
 }
 
 .admin_content_heading {
@@ -658,4 +661,182 @@ h4.modal-title {
 
 .skills_navigation {
     float: right;
+}
+
+.admin_content_new_job {
+    position: relative;
+    padding: 15px 40px 25px 40px;
+}
+
+.admin_content_new_job_wrapper {
+    width: 844px;
+}
+
+.new_job_heading {
+    font: 14px/16px Arial;
+    color: rgb(153, 153, 153);
+    padding-bottom: 6px;
+    padding-top: 23px;
+    padding-left: 3px;
+}
+
+.new_job_title {
+
+}
+
+.new_job_title input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 47px;
+    font: 16px/47px Arial;
+    padding-left: 20px;
+}
+
+.new_job_company {
+
+}
+
+.new_job_company input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 47px;
+    font: 16px/47px Arial;
+    padding-left: 20px;
+}
+
+.new_job_location {
+
+}
+
+.new_job_location input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 47px;
+    font: 16px/47px Arial;
+    padding-left: 20px;
+}
+
+.new_job_company_logo {
+
+}
+
+.new_job_company_logo .input-group {
+    float: left;
+}
+
+.browse_company_logo {
+    position: relative;
+    width: 690px;
+}
+
+.browse_company_logo .input-group-addon {
+    font: 200 16px Arial;
+    background: #fff;
+}
+
+.input-group.upload_company_logo {
+    float: right;
+}
+
+.upload_company_logo_button, .upload_company_logo_button:hover, .upload_company_logo_button:active {
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #313131;
+    color: #fff;
+    outline: none;
+}
+
+.new_job_company_logo input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    width: 690px;
+    top: 0;
+    left: 0;
+    height: 47px;
+    z-index: 2;
+}
+
+.new_job_salary_date {
+
+}
+
+.new_job_salary {
+    float: left;
+    width: 404px;
+}
+
+.new_job_salary .users_search_input input {
+    height: 47px;
+    border: 1px solid #cccccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding-left: 15px;
+    font: 16px/47px Arial;
+    width: 325px;
+}
+
+.new_job_salary .users_search_select select {
+    background: transparent;
+    -webkit-appearance: none;
+    height: 47px;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    padding-left: 10px;
+    padding-right: 20px;
+    font: 14px/47px Arial;
+}
+
+.new_job_salary .users_search_select .caret {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+}
+
+.new_job_salary .users_search {
+    margin-bottom: 0;
+}
+
+.new_job_date {
+    float: right;
+}
+
+.new_job_date input {
+    padding-right: 40px;
+    background: url("../img/date.png") right 10px top 50% no-repeat;
+}
+
+.new_job_date_from {
+    float: left;
+    width: 192px;
+    margin-right: 20px;
+}
+
+.new_job_date_to {
+    float: right;
+    width: 192px;
+}
+
+.new_job_post_buttons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.new_job_post_buttons button {
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+button.post_job_button {
+    padding-left: 40px;
+    background: #5cb85c url("../img/sign.png") 17px 50% no-repeat;
 }
