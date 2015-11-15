@@ -225,6 +225,7 @@ h1, h2, h2, p {
     font: 24px/26px Arial;
     color: #898989;
     padding-bottom: 20px;
+    position: relative;
 }
 
 .admin_content {
@@ -747,7 +748,10 @@ h4.modal-title {
     float: right;
 }
 
-.upload_company_logo_button, .upload_company_logo_button:hover, .upload_company_logo_button:active {
+button.upload_company_logo_button,
+button.upload_company_logo_button:hover,
+button.upload_company_logo_button:focus,
+button.upload_company_logo_button:active {
     padding-right: 40px;
     padding-left: 40px;
     background-color: #313131;
@@ -836,7 +840,179 @@ h4.modal-title {
     padding-right: 25px;
 }
 
-button.post_job_button {
+button.post_job_button, button.post_job_button:hover {
     padding-left: 40px;
     background: #5cb85c url("../img/sign.png") 17px 50% no-repeat;
+}
+
+.admin_content_new_blog_post {
+    position: relative;
+    padding: 15px 40px 25px 40px;
+}
+
+.new_blog_post_category {
+
+}
+
+.new_blog_post_category_drop_down {
+    float: left;
+}
+
+.new_blog_post_category_drop_down .dropdown-menu {
+    padding: 15px;
+    width: 265px;
+}
+
+.new_blog_post_category_drop_down .dropdown-menu li {
+    font: 16px/25px Arial;
+}
+
+.new_blog_post_category_drop_down .dropdown-menu li input[type='checkbox'] {
+    float: right;
+}
+
+.new_blog_post_category_drop_down .dropdown-toggle {
+    width: 265px;
+    text-align: left;
+}
+
+.new_blog_post_category_drop_down .dropdown-toggle .caret {
+    float: right;
+    margin-top: 10px;
+}
+
+.new_blog_post_category_input {
+    float: right;
+    width: 560px;
+}
+
+.new_blog_post_drop_files {
+    height: 117px;
+    border: 1px dashed #4a90e2;
+    border-radius: 7px;
+    margin-top: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.new_blog_post_drop_files.hover {
+    transform: scale(1.1);
+}
+
+.new_blog_post_drop_files p {
+    color: #4a90e2;
+    font: 18px/117px Arial;
+}
+
+.new_blog_post_company_logo {
+    float: left;
+    width: 460px;
+}
+
+.new_blog_post_company_logo .browse_company_logo {
+    position: relative;
+    width: 311px;
+}
+
+.new_blog_post_company_logo input[type='file'] {
+    width: 311px;
+}
+
+
+.new_blog_post_video_url {
+    float: right;
+    width: 353px;
+}
+
+.new_blog_post_buttons {
+    border-top: 1px solid #ddd;
+}
+
+.new_blog_post_buttons_wrapper {
+    padding-top: 20px;
+    width: 844px;
+}
+
+button.new_blog_post_buttons_cancel {
+    float: left;
+    margin: 0;
+}
+
+button.new_blog_post_buttons_preview,
+button.new_blog_post_buttons_preview:hover,
+button.new_blog_post_buttons_preview:focus,
+button.new_blog_post_buttons_preview:active {
+    background-color: #313131;
+    color: #fff;
+    outline: none;
+}
+
+.admin_content_job_details {
+    position: relative;
+    padding: 15px 40px 25px 40px;
+}
+
+.job_details_info {
+
+}
+
+.job_details_info_first {
+    float: left;
+    width: 210px;
+}
+
+.job_details_info_second {
+    float: left;
+}
+
+.job_details_info_element {
+    margin-bottom: 15px;
+}
+
+.job_details_info_element .content_text {
+    font: 18px/20px Arial;
+    color: #313131;
+    padding-top: 10px;
+}
+
+.job_details_info_element_heading {
+    font: 14px/16px Arial;
+    color: rgb(153, 153, 153);
+    padding-bottom: 6px;
+    padding-top: 23px;
+}
+
+.job_details_info_element img {
+    height: 76px;
+    margin: 44px 0 0 0;
+}
+
+.job_details_description_text {
+    font: 14px/20px Arial;
+    color: #313131;
+    padding-top: 5px;
+}
+
+button.edit_job_button, button.edit_job_button:hover {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding-left: 75px;
+    padding-right: 50px;
+    background: #5cb85c url("../img/edit_job_pencil.png") 40px 50% no-repeat;
+}
+
+.users_table tr:hover .blog_post_edit_btn {
+    opacity: 1;
+}
+.blog_post_edit_btn, .blog_post_edit_btn:hover {
+    opacity: 0;
+    cursor: pointer;
+    height: 22px;
+    font: 12px/14px Arial;
+    border: 1px solid #5cb85c;
+    color: #5cb85c;
+    background: transparent;
+    padding: 0px 10px 0px 10px;
+    margin-right: 10px;
 }

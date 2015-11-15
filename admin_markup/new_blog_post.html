@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <script src="assets/js/ckeditor/ckeditor.js"></script>
+    <script src="assets/js/ckeditor/sample.js"></script>
+    <link rel="stylesheet" href="assets/css/samples.css"/>
+    <link rel="stylesheet" href="assets/css/neo.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="admin_header">
+        <div class="admin_header_logo">
+            <a href="#">RIOT</a>
+        </div>
+        <div class="admin_header_menu">
+            <ul class="clearfix">
+                <li class="menu_dashboard active">Dashboard</li>
+                <li class="menu_users">Users</li>
+                <li class="menu_jobs">Jobs</li>
+                <li class="menu_explore">Explore</li>
+                <li class="menu_skills">Skills</li>
+                <li class="menu_blog">Blog</li>
+            </ul>
+        </div>
+        <div class="admin_header_logout">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="admin_content_wrapper">
+        <p class="admin_content_heading">New Blog Post</p>
+        <div class="admin_content admin_content_new_blog_post clearfix">
+            <div class="admin_content_new_job_wrapper">
+                <div class="new_job_title">
+                    <p class="new_job_heading">Post Title</p>
+                    <input type="text" placeholder=""/>
+                </div>
+                <div class="new_blog_post_category clearfix">
+                    <div class="new_blog_post_category_drop_down">
+                        <p class="new_job_heading">Category</p>
+                        <div class="dropdown clearfix">
+                            <button class="btn btn-lg btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pick Category
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li>Category 1 <input type="checkbox" value="Category 1"/></li>
+                                <li>Category 2 <input type="checkbox" value="Category 2"/></li>
+                                <li>Category 3 <input type="checkbox" value="Category 3"/></li>
+                                <li>Category 4 <input type="checkbox" value="Category 4"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="new_blog_post_category_input">
+                        <p class="new_job_heading">Category</p>
+                        <input class="form-control input-lg" type="text" placeholder=""/>
+                    </div>
+                </div>
+                <script>
+                    //Demo
+                    $('.new_blog_post_category_drop_down .dropdown-menu li input[type="checkbox"]').on('change', function () {
+                        var str = '';
+                        $('.new_blog_post_category_drop_down .dropdown-menu li input[type="checkbox"]:checked').each(function(i) {
+                            str += $(this).val() + ', ';
+                        });
+                        $('.new_blog_post_category_input input').val(str);
+                    });
+                </script>
+                <div class="job_description">
+                    <p class="new_job_heading">Blog Post Description</p>
+                    <div id="editor">
+                        <h1>Hello world!</h1>
+                        <p>I'm an instance of <a href="http://ckeditor.com">CKEditor</a>.</p>
+                    </div>
+                </div>
+                <div class="new_blog_post_drop_files">
+                    <form action="#">
+                        <p>DROP FILES TO UPLOAD</p>
+                    </form>
+                </div>
+                <script>
+                    //Demo
+                    var dropZone = $('.new_blog_post_drop_files'),
+                        maxFileSize = 10000000; // 10Mb
+                    dropZone[0].ondragover = function() {
+                        dropZone.addClass('hover');
+                        return false;
+                    };
+                    dropZone[0].ondragleave = function() {
+                        dropZone.removeClass('hover');
+                        return false;
+                    };
+                    dropZone[0].ondrop = function(event) {
+                        event.preventDefault();
+                        dropZone.removeClass('hover');
+                        dropZone.addClass('drop');
+
+                        var file = event.dataTransfer.files[0];
+
+                        if (file.size > maxFileSize) {
+                            console.log('File to big');
+                            dropZone.addClass('error');
+                            return false;
+                        }
+
+                        var xhr = new XMLHttpRequest();
+                        xhr.onreadystatechange = stateChange;
+                        xhr.open('POST', '/your-address-for-upload');
+                        xhr.setRequestHeader('X-FILE-NAME', file.name);
+                        xhr.send(file);
+                    };
+                    function stateChange(event) {
+                        if (event.target.readyState == 4) {
+                            if (event.target.status == 200) {
+                                console.log('success');
+                            } else {
+                                console.log('error');
+                            }
+                        }
+                    }
+                </script>
+                <div class="new_job_company_logo clearfix">
+                    <div class="new_blog_post_company_logo">
+                        <p class="new_job_heading">Company Logo</p>
+                        <div class="input-group input-group-lg browse_company_logo">
+                            <span class="input-group-addon">Browse</span>
+                            <input type="text" class="form-control" placeholder="">
+                            <input type="file"/>
+                        </div>
+                        <div class="input-group upload_company_logo">
+                            <button type="button" class="btn btn-lg upload_company_logo_button">Upload</button>
+                        </div>
+                    </div>
+                    <div class="new_blog_post_video_url">
+                        <p class="new_job_heading">Video URL</p>
+                        <input class="form-control input-lg" type="text"/>
+                    </div>
+                </div>
+                <script>
+                    //Demo
+                    $('.new_blog_post_company_logo input[type="file"]').on('change', function() {
+                        var val = $(this).val();
+                        $('.new_blog_post_company_logo input[type="text"]').val(val);
+                    });
+                </script>
+            </div>
+            <div class="new_job_post_buttons new_blog_post_buttons">
+                <div class="new_blog_post_buttons_wrapper">
+                    <p>
+                        <button type="button" class="btn btn-default btn-lg new_blog_post_buttons_cancel">Cancel</button>
+                        <button type="button" class="btn btn-lg new_blog_post_buttons_preview">Preview</button>
+                        <button type="button" class="btn btn-primary btn-lg new_blog_post_buttons_save">Save</button>
+                        <button type="button" class="btn btn-success btn-lg post_job_button new_blog_post_buttons_publish">Publish</button>
+                    </p>
+                    <div class="checkbox new_job_post_buttons_shedule">
+                        <label>
+                            <input type="checkbox"> Shedule
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="assets/js/main.js"></script>
+<script>
+    initSample();
+</script>
+</body>
+</html>
